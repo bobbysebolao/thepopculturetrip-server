@@ -17,7 +17,7 @@ require("dotenv").config();
 const app = express();
 
 const corsOriginDevelopment = "http://localhost:8080";
-const corsOriginProduction = "https://what.pm";
+const corsOriginProduction = "https://thepopculturetrip.netlify.com";
 
 app.use(
   cors({
