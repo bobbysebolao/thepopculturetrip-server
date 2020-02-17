@@ -19,12 +19,7 @@ const app = express();
 const corsOriginDevelopment = "http://localhost:8080";
 const corsOriginProduction = "https://thepopculturetrip.netlify.com";
 
-app.use(
-  cors({
-    credentials: true,
-    origin: "*"
-  })
-);
+app.use(cors());
 
 const mongoDbUrl = process.env.MONGO_DB_URL;
 mongoose.Promise = require("bluebird");
