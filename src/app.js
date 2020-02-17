@@ -22,10 +22,7 @@ const corsOriginProduction = "https://thepopculturetrip.netlify.com";
 app.use(
   cors({
     credentials: true,
-    origin:
-      process.env.NODE_ENV === "production"
-        ? corsOriginProduction
-        : corsOriginDevelopment
+    origin: true
   })
 );
 
