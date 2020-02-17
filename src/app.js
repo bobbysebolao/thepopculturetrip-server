@@ -22,7 +22,7 @@ const corsOriginProduction = "https://thepopculturetrip.netlify.com";
 app.use(
   cors({
     credentials: true,
-    origin: false
+    origin: "*"
   })
 );
 
