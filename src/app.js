@@ -23,7 +23,7 @@ app.use(
   cors({
     credentials: true,
     origin:
-      process.env.NODE_ENV === "start"
+      process.env.NODE_ENV === "production"
         ? corsOriginProduction
         : corsOriginDevelopment
   })
