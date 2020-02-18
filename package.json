@@ -2,8 +2,6 @@
   "name": "whatpm-server",
   "version": "1.0.0",
   "description": "Express backend for what.pm",
-  "author": "Nienke Dekker <nienkedekker@gmail.com>",
-  "private": true,
   "scripts": {
     "start:dev": "NODE_ENV=development nodemon --exec babel-node ./src/bin/www.js",
     "start": "NODE_ENV=start npm-run-all clean build server:prod",
