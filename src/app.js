@@ -8,6 +8,7 @@ import books from "./routes/books";
 import movies from "./routes/movies";
 import shows from "./routes/shows";
 import years from "./routes/years";
+import albums from "./routes/albums";
 import authentication from "./routes/authentication";
 import search from "./routes/search";
 import stats from "./routes/stats";
@@ -58,6 +59,7 @@ app.use("/api/books", books);
 app.use("/api/movies", movies);
 app.use("/api/shows", shows);
 app.use("/api/years", years);
+app.use("/api/albums", albums);
 app.use("/api/search", search);
 app.use("/api/stats", stats);
 

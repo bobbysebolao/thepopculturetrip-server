@@ -9,6 +9,7 @@ import async from "async";
 import Book from "../models/Book";
 import Show from "../models/Show";
 import Movie from "../models/Movie";
+import Album from "../models/Album";
 
 const router = express.Router();
 
@@ -29,6 +30,9 @@ const getAllitemsByYear = (req, res, next) => {
       },
       allShows: cb => {
         Show.find({ belongs_to_year: req.params.year }, cb).sort("createdAt");
+      },
+      allAlbums: cb => {
+        Album.find({ belongs_to_year: req.params.year }, cb).sort("createdAt");
       }
     },
     (err, allItems) => {
