@@ -10,6 +10,7 @@ import Book from "../models/Book";
 import Show from "../models/Show";
 import Movie from "../models/Movie";
 import Album from "../models/Album";
+import Game from "../models/Game";
 
 const router = express.Router();
 
@@ -33,6 +34,9 @@ const getAllitemsByYear = (req, res, next) => {
       },
       allAlbums: cb => {
         Album.find({ belongs_to_year: req.params.year }, cb).sort("createdAt");
+      },
+      allGames: cb => {
+        Game.find({ belongs_to_year: req.params.year }, cb).sort("createdAt");
       }
     },
     (err, allItems) => {
