@@ -35,7 +35,7 @@ mongoose.model(
         type: String, // this should be a Number ¯⁠\_(ツ)_/⁠¯
         required: true,
         text: true,
-        enum: [...range(2007, getCurrentYear(new Date()))]
+        enum: [...range(2019, getCurrentYear(new Date()))]
       },
       redo: { type: Boolean, required: false, default: false },
       updated_date: { type: Date, default: Date.now }
