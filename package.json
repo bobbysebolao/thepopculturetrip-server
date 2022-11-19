@@ -48,7 +48,7 @@
     "eslint-plugin-import": "^2.18.2",
     "mocha": "^6.2.2",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "engines": {
     "node": "~10.15.3"
